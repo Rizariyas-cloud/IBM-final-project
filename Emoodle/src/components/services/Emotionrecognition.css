@@ -1,0 +1,348 @@
+.emotion-recognition-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.erhead {
+    text-align: center;
+    font-size: 50px;
+    color: #31d7a3;
+    margin-bottom: 30px;
+}
+
+.upload-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.file-upload {
+    position: relative;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #31d7a3, #2bc4a0);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.webcam-button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.webcam-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.webcam-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.realtime-button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.realtime-button.start {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.realtime-button.stop {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+}
+
+.realtime-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.realtime-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.preview-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preview-image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.analyze-button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analyze-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.analyze-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background: #fee;
+    color: #c33;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #c33;
+    font-weight: 500;
+}
+
+.result-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.main-result {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.main-result h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.emotion-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.emotion-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #31d7a3;
+    text-transform: capitalize;
+}
+
+.confidence {
+    font-size: 18px;
+    color: #666;
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.all-predictions h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.predictions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prediction-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.emotion-label {
+    min-width: 100px;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.confidence-bar {
+    flex: 1;
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.confidence-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #31d7a3, #2bc4a0);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.confidence-text {
+    min-width: 60px;
+    text-align: right;
+    font-weight: 500;
+    color: #666;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Real-time video styles */
+.realtime-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.live-video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+}
+
+.hidden-canvas {
+    display: none;
+}
+
+.live-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.live-emotion {
+    font-size: 24px;
+    font-weight: bold;
+    color: #31d7a3;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.live-confidence {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .emotion-recognition-container {
+        padding: 15px;
+    }
+    
+    .erhead {
+        font-size: 36px;
+    }
+    
+    .upload-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .upload-label,
+    .webcam-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .preview-image {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .emotion-name {
+        font-size: 24px;
+    }
+    
+    .prediction-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    
+    .emotion-label {
+        min-width: auto;
+    }
+    
+    .confidence-text {
+        text-align: left;
+    }
+}

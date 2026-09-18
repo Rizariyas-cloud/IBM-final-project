@@ -1,0 +1,137 @@
+.Aboutus {
+    color: #31d7a3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.Aboutpara1 {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin: 5%;
+    margin-right: 45%;
+}
+
+.Aboutpara2 {
+    color:#31d7a3;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5%;
+    margin-left: 45%;
+}
+
+.Aboutpara3 {
+    color:#31d7a3;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5%;
+    margin-right: 45%;
+}
+
+.Aboutpara4 {
+    color: #31d7a3;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5%;
+    margin-left: 45%;
+}
+
+.Lastpara {
+    color:#31d7a3 ;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5%;
+}
+
+.Robot-Picture {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3rem;
+    position:absolute;
+    top: 0;
+    left: 2;
+    overflow: hidden;
+    margin-top: 15%;
+    margin-left: 62%;
+    border-radius: 15%;
+}
+
+.Aboutpara1bg {
+    background-color:#252525;
+    position: absolute;
+    margin-top: 0;
+    border-radius: 15%;
+
+}
+
+.Aboutpara2bg {
+    background-color: #242424;
+    position: absolute;
+    margin-top: 5%;
+}
+
+.Aboutpara3bg {
+    background-color: #343434;
+    position: absolute;
+    margin-top: 27%;
+}
+
+.Aboutpara4bg {
+    background-color:  #242424;
+    position: absolute;
+    margin-top: 49%;
+    
+}
+
+.Lastparabg {
+    background-color: #343434;
+    position: absolute;
+    margin-top: 67.5%;
+}
+
+.Hand-Picture {
+    max-width: 180px;
+    margin: 0 auto;
+    padding: 3rem;
+    position:absolute;
+    top: 0;
+    left: 2;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 69%;
+    border-radius: 15%;
+}
+
+
+.Sign-Language {
+    max-width: 167px;
+    margin: 0 auto;
+    padding: 3rem;
+    position:absolute;
+    top: 0;
+    left: 2;
+    overflow: hidden;
+    margin-top: 0%;
+    margin-left: 10%;
+    border-radius: 15%;
+}
+
+.Facial-Picture {
+    max-width: 167px;
+    margin: 0 auto;
+    padding: 3rem;
+    position:absolute;
+    top: 0;
+    left: 2;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 15%;
+}

@@ -1,0 +1,104 @@
+/* components/navbar/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #333;
+    color: #fff;
+    position:fixed;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    bottom: 645px;
+    width: 92%;
+    transition: transform 0.3s ease-in-out;
+    scroll-behavior: smooth;
+  }
+
+  .navbar.visible {
+    transform: translateY(0);
+  }
+
+  .navbar.hidden {
+    transform: translateY(-100%);
+  }
+  
+  .navbar-logo {
+    font-size: 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#31d7a3;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+  }
+  
+  .navbar-links li {
+    margin-left: 4.5rem;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-links a:hover {
+    color: #31d7a3;
+  }
+
+  .active {
+    color: #f1c40f;
+  }
+  
+  .navbar-dropdown > span {
+    color: #fff;
+    position: relative;
+    transition: color 0s ease-in-out;
+  }
+  
+  .navbar-dropdown > span:hover {
+    color: #31d7a3;
+  }
+
+  .dropdown-menu {
+    position:absolute;
+    top: 100%;
+    right: 0;
+    margin-right: 4%;
+    width: 20%;
+    background-color: #444;
+    padding: 1rem 0rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: opacity 2s;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    list-style: none;
+    text-align: left;
+    margin-left: 8%;
+  }
+  
+  .dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  .dropdown-menu li a:hover {
+    border-radius: 5px;
+  }

@@ -1,0 +1,19 @@
+.video-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3rem;
+    position:absolute;
+    top: 0;
+    left: 2;
+    overflow: hidden;
+    margin-top: 5%;
+    margin-left: 62%;
+  }
+  
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+  }
